@@ -9,7 +9,7 @@ const url = 'https://techcrunch.com/'
 axios(url)
     .then(response => {
         const html = response.data
-        console.log(html)
+        // console.log(html)
         const $  = cheerio.load(html)
         const articles = []
          $('.wp-block-heading', html).each(function() { 
@@ -20,6 +20,7 @@ axios(url)
                 url
             })
           })
-     })
+          console.log(articles)
+     }).catch(err => console.log(err))
 
 app.listen(PORT,() => console.log(`Server is running on port ${PORT}`))
