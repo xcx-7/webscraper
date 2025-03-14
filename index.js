@@ -23,4 +23,20 @@ axios(url)
           console.log(articles)
      }).catch(err => console.log(err))
 
+
+     
+
+
+
+
+     
+    //  (async () => {
+    //     const url = 'https://www.example.com';
+    //     const response = await fetch(url);
+      
+    //     const $ = cheerio.load(await response.text());
+    //     console.log($.html());
+      
+    //   })();
+
 app.listen(PORT,() => console.log(`Server is running on port ${PORT}`))
